@@ -4,12 +4,12 @@ import { ProductContext } from '../contexts/ProductContext';
 
 const Home = () => {
   const { products } = useContext(ProductContext);
-  console.log(products);
 
   const filteredProducts = products.filter(
     (item) =>
       item.category === "men's clothing" || item.category === "women's clothing"
   );
+
 
   return (
     <div>
